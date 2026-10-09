@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix INSTACREDIT España - Préstamos Rápidos Online y Cuenta Digital",
+  "description": "Plataforma fintech líder en micropréstamos online y cuenta digital en España. Desembolsos en minutos, cuenta digital con IBAN español, firma electrónica cualificada eIDAS y supervisión del Banco de España y Ley 16/2011. formularios y documentos asitidos y capacitacion apra empleados con cero conozimiento experienzia y idea de material\n",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,253 @@
+export const PROJECT_MASTER_BLUEPRINT_JSON = {
+  metadata_proyecto: {
+    nombre_oficial:
+      'INSTACREDIT ESPAÑA FINTECH S.L. — Ecosistema Integral de Préstamos, Capacitación Asistida por Voz y Copiloto de Call Center',
+    version: '4.0.0-MASTER-ESPAÑA',
+    pais_jurisdiccion: 'España (Unión Europea)',
+    moneda: 'EUR (€)',
+    rango_importes_prestamo: {
+      minimo_eur: 2000,
+      maximo_eur: 100000,
+      plazos_meses: [3, 6, 12, 18, 24, 36, 48, 60, 72],
+      tin_mensual_fijo: '1,95%',
+      tae_anual_referencia: '26,82%',
+      comision_apertura_anticipada: '0,00 € (Prohibido cobrar por adelantado)',
+      comision_amortizacion_anticipada: '0,00 % (Cancelación anticipada gratuita)'
+    },
+    nif_entidad_referencia: 'B-87942105'
+  },
+  intencion_esencia_y_filosofia: {
+    intencion_principal:
+      'Permitir que el propietario de una financiera y su equipo de empleados o agentes de Call Center (incluso sin ningún conocimiento previo en banca, finanzas, leyes o tecnología) puedan operar una entidad de crédito al consumo en España de principio a fin, con todo el material legal, comercial, visual, auditivo y escrito listo para enviarse en 1 solo clic.',
+    esencia_del_sistema:
+      'Una aplicación todo-en-uno que actúa simultáneamente como: 1) Portal Público de Solicitud y Banca Digital para el Cliente, 2) Academia Didáctica Auditiva y Visual desde Cero para Empleados Nuevos, 3) Copiloto en Tiempo Real de Call Center con Teleprompter, y 4) Glosario-Asistente Autónomo con botón "Hacer Todo por Mí" que redacta, envía por WhatsApp/SMS/Correo, abre formularios con voz y registra la bitácora automáticamente.',
+    pilares_didacticos_para_empleados_sin_capacitacion: [
+      'ASISTENCIA AUDITIVA DOBLE (Voz es-ES): Un botón azul le explica al oído al empleado qué significa cada cosa y qué debe hacer (Susurro de Capacitación), y un botón verde lee en voz alta exactamente cómo debe hablarle al cliente (Locución Modelo).',
+      'ASISTENCIA VISUAL CON SEMÁFORO: Código universal de colores (Verde = Lo que SÍ debes hacer y decir; Rojo = Lo que está terminantemente prohibido hacer o decir) y pasos numerados sobre qué botón tocar en pantalla.',
+      'ASISTENCIA ESCRITA MULTICANAL EN 1 CLIC: Plantillas de WhatsApp con tarjetas gráficas (URLs de fotos), SMS cortos, Correos Electrónicos institucionales y Libretos A4 imprimibles que se rellenan solos con los datos del cliente.',
+      'AUTOMATIZACIÓN TOTAL ("HAZLO TODO POR MÍ"): Un solo botón ejecuta el flujo completo (personaliza plantilla, copia al portapapeles, abre WhatsApp del cliente, abre formulario con voz o contrato PDF y guarda la nota en la bitácora del expediente).'
+    ]
+  },
+  marco_legal_y_normativo_espana: {
+    leyes_aplicables: [
+      {
+        norma: 'Ley 16/2011, de 24 de junio, de Contratos de Crédito al Consumo',
+        que_regula:
+          'Obliga a entregar información precontractual clara (FEIN/INE), garantiza 14 días naturales de derecho de desistimiento sin penalización, fija cuotas transparentes y protege al consumidor frente a cobros ocultos.',
+        como_explicarlo_al_cliente:
+          'Su préstamo está blindado por la Ley 16/2011 de España: cuota 100% fija, 0 € de pagos por adelantado y 14 días legales para desistir si cambia de opinión.'
+      },
+      {
+        norma: 'Circular 5/2012 del Banco de España y Orden ECO/734/2004',
+        que_regula:
+          'Transparencia de los servicios bancarios y funcionamiento obligatorio del Servicio de Atención al Cliente (SAC), con plazo máximo de respuesta de 15 días hábiles ante cualquier queja o reclamación.',
+        como_explicarlo_al_cliente:
+          'Cumplimos con todos los estándares de transparencia de la Circular 5/2012 del Banco de España y disponemos de Servicio de Atención al Cliente oficial.'
+      },
+      {
+        norma: 'Ley 10/2010 de Prevención del Blanqueo de Capitales (SEPBLAC)',
+        que_regula:
+          'Exige identificar formalmente al solicitante con su DNI/TIE en vigor y prohíbe terminantemente desembolsar fondos en cuentas bancarias (IBAN) que pertenezcan a terceras personas (familiares, amigos o parejas).',
+        como_explicarlo_al_cliente:
+          'Por seguridad y cumplimiento de la Ley 10/2010 del SEPBLAC, el dinero solo puede transferirse a una cuenta IBAN de España donde usted sea el titular.'
+      },
+      {
+        norma: 'Reglamento Europeo (UE) Nº 910/2014 (Firma Electrónica eIDAS)',
+        que_regula:
+          'Otorga plena validez jurídica y ejecutiva a la firma electrónica avanzada trazada en la pantalla del teléfono móvil junto con el código OTP de 6 dígitos enviado por SMS, sin necesidad de acudir a una notaría física.',
+        como_explicarlo_al_cliente:
+          'Su firma digital desde el móvil con código SMS tiene la misma validez legal que firmar ante notario público gracias al Reglamento Europeo eIDAS.'
+      },
+      {
+        norma: 'RGPD (UE 2016/679) y LOPDGDD 3/2018 (Protección de Datos)',
+        que_regula:
+          'Garantiza la confidencialidad absoluta de las fotos de DNI, nóminas y datos bancarios del cliente; prohíbe a los empleados guardar fotos de clientes en sus móviles personales.',
+        como_explicarlo_al_cliente:
+          'Sus documentos viajan cifrados y están protegidos bajo la Ley Orgánica de Protección de Datos de España.'
+      }
+    ]
+  },
+  tipologia_completa_de_clientes_y_casos_en_espana: [
+    {
+      id_perfil: 'PERFIL_01_ASALARIADO_NOMINA',
+      titulo: 'Trabajador por Cuenta Ajena (Con Nómina Fija o Temporal)',
+      documentos_que_se_piden: [
+        'Foto DNI o TIE en color por ambas caras (4 esquinas visibles)',
+        'Última nómina mensual o justificante de abono de salario en cuenta',
+        'Certificado o captura de titularidad de cuenta IBAN (ES + 22 dígitos)'
+      ],
+      gancho_comercial:
+        'Aprobación en menos de 30 minutos con tu última nómina, sin cambiar de banco y con abono directo por SEPA Instant o Bizum.',
+      que_debe_hacer_el_asesor:
+        'Verificar que el líquido a percibir de la nómina cubra holgadamente la cuota mensual (sin superar el 35% de endeudamiento) y pasar a Aprobado.'
+    },
+    {
+      id_perfil: 'PERFIL_02_PENSIONISTA_ADULTO_MAYOR',
+      titulo: 'Pensionista, Jubilado o Persona Mayor con Dificultad en el Móvil',
+      documentos_que_se_piden: [
+        'Foto del DNI en vigor',
+        'Certificado de revalorización de pensión de la Seguridad Social o recibo bancario de la pensión',
+        'Captura o libreta bancaria donde conste su código IBAN como titular'
+      ],
+      gancho_comercial:
+        'Trato humano preferente sin letra pequeña: no tienes que pelearte con el móvil, nuestro Formulario con Voz te lee todo en voz alta y tu asesor te acompaña paso a paso.',
+      que_debe_hacer_el_asesor:
+        'Hablar despacio (usar velocidad 0.9x), tratar de "Don/Doña", enviar por WhatsApp el Formulario Didáctico con Voz y quedarse en línea mientras el cliente toca el botón verde de altavoz.'
+    },
+    {
+      id_perfil: 'PERFIL_03_AUTONOMO_EMPRESARIO',
+      titulo: 'Autónomo, Profesional Independiente o Pequeño Negocio (RETA)',
+      documentos_que_se_piden: [
+        'DNI / NIE en vigor',
+        'Última declaración trimestral de IRPF (Modelo 130) o IVA (Modelo 303) o último recibo de cuota de autónomos',
+        'Certificado de titularidad de cuenta IBAN profesional o personal'
+      ],
+      gancho_comercial:
+        'Liquidez inmediata de 2.000 € a 100.000 € para inyectar capital a tu negocio, comprar maquinaria o cubrir impuestos sin burocracia bancaria ni avales hipotecarios.',
+      que_debe_hacer_el_asesor:
+        'Validar actividad económica real, destacar que la cuota es 100% fija y deducible en su actividad, y agilizar la firma del pagaré digital eIDAS.'
+    },
+    {
+      id_perfil: 'PERFIL_04_EXTRANJERO_RESIDENTE_NIE',
+      titulo: 'Extranjero Residente en España con TIE / NIE o Pasaporte',
+      documentos_que_se_piden: [
+        'Tarjeta de Identidad de Extranjero (TIE/NIE) en vigor por ambas caras (o Pasaporte + resguardo de renovación)',
+        'Justificante de ingresos en España (nómina, contrato laboral o ingresos demostrables)',
+        'Cuenta bancaria IBAN española (ES...) a su nombre exclusivo'
+      ],
+      gancho_comercial:
+        'Con tu NIE/TIE en vigor y tu cuenta en España tienes exactamente los mismos derechos de financiación rápida, sin necesitar avalistas españoles.',
+      que_debe_hacer_el_asesor:
+        'Cotejar que el NIE empieza por X, Y o Z, comprobar fecha de vigencia y asegurar que el IBAN sea español (empieza por ES).'
+    },
+    {
+      id_perfil: 'PERFIL_05_CLIENTE_EN_ASNEF_O_SIN_AVAL',
+      titulo: 'Persona con Apuntes en ASNEF / EQUIFAX o Sin Avalista',
+      documentos_que_se_piden: [
+        'DNI / NIE en vigor',
+        'Justificante de ingresos actuales (nómina, pensión o autónomo) que demuestre capacidad de pago hoy',
+        'Titularidad IBAN'
+      ],
+      gancho_comercial:
+        '¿Tu banco te cerró la puerta por una factura de teléfono o luz en ASNEF? Aquí evaluamos tus ingresos de hoy de forma humana y nuestro Fondo Europeo de Garantías (FGA) te respalda sin pedirte avalista.',
+      que_debe_hacer_el_asesor:
+        'Tranquilizar al cliente sin juzgarlo, explicar que deudas menores de telecomunicaciones o suministros (<1.000 €) no bloquean el préstamo gracias a la cobertura automática del Fondo FGA.'
+    },
+    {
+      id_perfil: 'PERFIL_06_CLIENTE_DESCONFIADO_MIEDO_ESTAFA',
+      titulo: 'Cliente Desconfiado o que Tuvo Malas Experiencias en Internet',
+      documentos_que_se_piden: [
+        'Ningún pago previo jamás (0,00 €)',
+        'Envío previo de nuestra Ficha Legal con NIF B-87942105 y Certificado de Cero Anticipos'
+      ],
+      gancho_comercial:
+        'Garantía escrita Cero Anticipos: en INSTACREDIT España está prohibido pedir un solo euro por adelantado. Recibes el 100% de tu dinero íntegro en tu banco.',
+      que_debe_hacer_el_asesor:
+        'Felicitar al cliente por ser precavido, responder con un "Rotundamente NO" ante cualquier duda de pagos previos, y enviarle en 1 clic el Kit de Transparencia Banco de España.'
+    },
+    {
+      id_perfil: 'PERFIL_07_CLIENTE_CON_RETRASO_PRORROGA_O_QUEJA',
+      titulo: 'Cliente que No Llega a Pagar la Cuota a Tiempo o Presenta Queja SAC',
+      documentos_que_se_piden: [
+        'Formulario Didáctico #4 de Solicitud de Prórroga y Alivio Financiero (+15, +30 o +45 días)',
+        'O Formulario Didáctico #5 de Reclamación Oficial ante el Servicio de Atención al Cliente (SAC)'
+      ],
+      gancho_comercial:
+        'Política de Cero Acoso: si este mes se retrasó tu nómina y nos avisas a tiempo, protegemos tu historial con una prórroga de hasta 45 días sin recargos de mora y sin reportarte a ASNEF.',
+      que_debe_hacer_el_asesor:
+        'Agradecer la honestidad del cliente, enviar en 1 clic el Formulario de Prórroga con Voz y dejar constancia en la bitácora.'
+    }
+  ],
+  catalogo_documentos_oficiales_del_sistema: [
+    {
+      codigo_documento: 'contrato_mutuo',
+      nombre: '1. Contrato de Préstamo Mercantil / Crédito al Consumo (Ley 16/2011)',
+      paginas: 4,
+      cuando_se_usa:
+        'Se genera automáticamente para cada solicitud y detalla capital, TIN, TAE, cuadro de cuotas fijas, derecho de desistimiento de 14 días y amortización anticipada al 0%.'
+    },
+    {
+      codigo_documento: 'pagare_en_blanco',
+      nombre: '2. Pagaré Notarial Desmaterializado con Firma Biométrica eIDAS y Token OTP',
+      paginas: 4,
+      cuando_se_usa:
+        'En estado "Aprobado", el cliente lo firma con el dedo desde su móvil y valida con el código SMS de 6 dígitos para activar el desembolso.'
+    },
+    {
+      codigo_documento: 'ficha_ine',
+      nombre: '3. Información Normalizada Europea (FEIN / INE - Banco de España)',
+      paginas: 4,
+      cuando_se_usa:
+        'Documento precontractual obligatorio en España y la UE para que el cliente conozca todas las condiciones antes de comprometerse.'
+    },
+    {
+      codigo_documento: 'mandato_sepa',
+      nombre: '4. Orden de Domiciliación de Adeudo Directo SEPA y Verificación IBAN (SEPBLAC)',
+      paginas: 4,
+      cuando_se_usa:
+        'Autoriza el abono de los fondos en la cuenta IBAN del titular y el pago cómodo de las cuotas mensuales.'
+    },
+    {
+      codigo_documento: 'certificado_fga',
+      nombre: '5. Certificado de Cobertura del Fondo Europeo de Garantías (FGA - Sin Avalista)',
+      paginas: 4,
+      cuando_se_usa:
+        'Acredita que la operación está avalada institucionalmente sin exigir fiadores familiares ni garantías hipotecarias.'
+    },
+    {
+      codigo_documento: 'paz_y_salvo',
+      nombre: '6. Certificado Oficial de Liquidación, Desembolso y Paz y Salvo',
+      paginas: 4,
+      cuando_se_usa:
+        'Justificante oficial con código QR y sello criptográfico que certifica el desembolso o la cancelación total sin deudas pendientes.'
+    }
+  ],
+  registro_clientes_fotos_urls_y_formularios: {
+    como_funciona_el_registro_de_clientes:
+      '1) Registro Web Autónomo del Cliente en 3 pasos, o 2) Registro Manual Asistido por el Asesor/Admin (botón "+ Registrar Cliente Manual"), que crea instantáneamente el expediente INSTA-ES, su Cuenta Digital IBAN en 0,00 € y sus 6 documentos legales.',
+    catalogo_urls_fotos_y_tarjetas_whatsapp: [
+      { id: 'kit_01', url: '/assets/whatsapp/kit_01_bienvenida_oficial.png', uso: 'Tarjeta de bienvenida y asignación de asesor' },
+      { id: 'kit_02', url: '/assets/whatsapp/kit_02_requisitos_documentales.png', uso: 'Infografía de los 3 requisitos (DNI, IBAN, Ingresos)' },
+      { id: 'kit_03', url: '/assets/whatsapp/kit_03_formulario_voz.png', uso: 'Tarjeta de acceso al Formulario Didáctico con Voz para mayores' },
+      { id: 'kit_04', url: '/assets/whatsapp/kit_04_transparencia_bde.png', uso: 'Certificado visual de Cero Anticipos y NIF B-87942105' },
+      { id: 'kit_05', url: '/assets/whatsapp/kit_05_garantia_30_min.png', uso: 'Cobertura del Fondo Europeo de Garantías (Sin Avalista / ASNEF)' },
+      { id: 'kit_09', url: '/assets/whatsapp/kit_09_aprobacion_oficial.png', uso: 'Certificado de Aprobación e instrucciones de firma eIDAS' },
+      { id: 'kit_12', url: '/assets/whatsapp/kit_12_fondos_disponibles.png', uso: 'Notificación de fondos acreditados en Cuenta Digital IBAN' },
+      { id: 'kit_14', url: '/assets/whatsapp/kit_14_alivio_prorroga.png', uso: 'Programa de Alivio Financiero y Prórroga (+15, +30, +45 días)' }
+    ],
+    los_5_formularios_asistidos_con_voz: [
+      'Formulario 1: Solicitud Guiada Paso a Paso con Voz (Datos Personales, Económicos y Banco)',
+      'Formulario 2: Subida Guiada de DNI/NIE y Certificado de Titularidad IBAN (SEPBLAC)',
+      'Formulario 3: Firma Táctil del Pagaré eIDAS y Validación de Código SMS (OTP)',
+      'Formulario 4: Solicitud de Prórroga y Alivio Financiero (+15, +30 o +45 días sin ASNEF)',
+      'Formulario 5: Hoja Oficial de Quejas y Reclamaciones SAC (Circular 5/2012 Banco de España)'
+    ]
+  },
+  ganchos_comerciales_y_anticipacion_de_objeciones: [
+    {
+      caso: 'Gancho de Apertura en los Primeros 15 Segundos',
+      script_exacto:
+        'Hola [Nombre], te habla [Asesor] de INSTACREDIT España. Te llamo por tu solicitud de [Monto] €: quería confirmarte personalmente que tu estudio es 100% gratuito, con 0 € de pagos por adelantado, y que ya tengo tu expediente listo para avanzar hoy mismo.'
+    },
+    {
+      caso: 'Objeción de Miedo a Estafas / Cobros Previos',
+      script_exacto:
+        'Haces muy bien en preguntar. En INSTACREDIT España jamás pedimos ni un solo céntimo por adelantado, ni para seguros ni para notaría. Recibes el 100% de tus [Monto] € íntegros en tu banco y te acabo de mandar por WhatsApp nuestra ficha legal con NIF B-87942105.'
+    },
+    {
+      caso: 'Objeción de Cuenta Digital en 0,00 €',
+      script_exacto:
+        'Tu Cuenta Digital IBAN empieza en 0,00 € de forma preventiva mientras validamos tu DNI. En el segundo exacto en que firmas tu pagaré digital, se cargan ahí el 100% de tus [Monto] € para transferirlos a tu banco por SEPA Instant o Bizum.'
+    },
+    {
+      caso: 'Objeción de Estar en ASNEF o No Tener Avalista',
+      script_exacto:
+        'No te preocupes si tuviste algún recibo de telefonía o luz en ASNEF. Aquí evaluamos tus ingresos actuales de forma humana y tu préstamo incluye el Fondo Europeo de Garantías (FGA), por lo que no necesitas molestar a ningún familiar como avalista.'
+    },
+    {
+      caso: 'Gancho de Escalado VIP hasta 100.000 €',
+      script_exacto:
+        'Al abonar puntualmente tus cuotas por Bizum o domiciliación SEPA, tu perfil sube a categoría Preferente VIP, desbloqueando ampliaciones de capital de hasta 100.000 € con aprobación directa.'
+    }
+  ]
+};
